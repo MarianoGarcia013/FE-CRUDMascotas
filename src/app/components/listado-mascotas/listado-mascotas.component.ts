@@ -10,8 +10,8 @@ const LISTADO_MASCOTAS: Mascota[] = [                                 // propied
   {nombre: 'Ciro', edad: 3, raza: 'Golden', color:'Dorado', peso: 13  },
   {nombre: 'Rudock', edad: 13, raza: 'Objero Aleman', color:'Negro', peso: 15 },
   {nombre: 'Fluki', edad: 12, raza: 'Breton', color:'Blanco y marron', peso: 6 },
-  {nombre: 'Branca', edad: 15, raza: 'Perdisero', color:'Marroncita', peso: 11 },
-  {nombre: 'Shercan', edad: 15, raza: 'Perdisero', color:'Blanco', peso: 12  }
+  {nombre: 'Branca', edad: 15, raza: 'Perdicero', color:'Marroncita', peso: 11 },
+  {nombre: 'Shercan', edad: 15, raza: 'Perdicero', color:'Blanco', peso: 12  }
 ];
 
 @Component({
@@ -21,7 +21,7 @@ const LISTADO_MASCOTAS: Mascota[] = [                                 // propied
 })
 
 export class ListadoMascotasComponent implements OnInit, AfterViewInit{  // Necesario implementar los metodos en la class
-  displayedColumns: string[] = ['nombre', 'edad', 'raza', 'color', 'peso'];
+  displayedColumns: string[] = ['nombre', 'edad', 'raza', 'color', 'peso', 'Acciones'];
   dataSource = new MatTableDataSource<Mascota>(LISTADO_MASCOTAS);
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;

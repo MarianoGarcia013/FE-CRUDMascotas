@@ -15,3 +15,18 @@ table {
     font-size: 14px;
     width: 100%;
   }
+
+.delete {
+    cursor: pointer;
+    color: #e15639;
+} 
+
+.edit {
+    cursor: pointer;
+    color: #1878B0;
+}
+
+.aceptar {
+    font-size: 10px;
+    line-height: 20px;
+}
